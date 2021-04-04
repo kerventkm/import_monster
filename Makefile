@@ -24,9 +24,5 @@ clean:
 	@rm -f .develop
 	@rm -f .flake
 
-install-dev:
-    @pip install -r requirements-dev.txt
-install-package:
-    @pip install -r requirements.txt
-
-install-all: install-dev install-package
+install:
+	@pip install -r requirements.txt

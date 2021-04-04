@@ -7,8 +7,9 @@ from typing import Callable, List, Union
 import scipy
 
 
-def methods_importer(method_name: str, modules: List[Union[str, ModuleType]]) \
-        -> List[Callable]:
+def methods_importer(
+    method_name: str, modules: List[Union[str, ModuleType]]
+) -> List[Callable]:
     lis_t = []
     for module in modules:
         try:
