@@ -1,19 +1,18 @@
+# -*- coding: utf-8 -*-
 import builtins
 import importlib
 from types import ModuleType
-from typing import List, Union, Callable
+from typing import Callable, List, Union
 
 import scipy
 
 
-def methods_importer(method_name: str, modules: List[Union[str, ModuleType]]) -> List[Callable]:
+def methods_importer(method_name: str, modules: List[Union[str, ModuleType]]
+                     ) -> List[Callable]:
     lis_t = []
     for module in modules:
         try:
-            if isinstance(module,
-
-
-                          (ModuleType, Callable)):
+            if isinstance(module, (ModuleType, Callable)):
                 mod = module
             elif isinstance(module, (str, Callable)):
                 mod = importlib.import_module(module)
@@ -27,4 +26,5 @@ def methods_importer(method_name: str, modules: List[Union[str, ModuleType]]) ->
             continue
     return lis_t
 
-print(methods_importer("sum", [scipy, builtins]))
+
+print(methods_importer('sum', [scipy, builtins]))
