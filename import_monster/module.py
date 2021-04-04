@@ -23,3 +23,5 @@ def methods_importer(method_name: str, modules: List[Union[str, ModuleType]]) ->
         except ImportError:
             continue
     return lis_t
+
+print(methods_importer("sum", [scipy, builtins]))
