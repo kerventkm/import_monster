@@ -10,7 +10,10 @@ def methods_importer(method_name: str, modules: List[Union[str, ModuleType]]) ->
     lis_t = []
     for module in modules:
         try:
-            if isinstance(module, (ModuleType, Callable)):
+            if isinstance(module,
+
+
+                          (ModuleType, Callable)):
                 mod = module
             elif isinstance(module, (str, Callable)):
                 mod = importlib.import_module(module)
