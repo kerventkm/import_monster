@@ -1,4 +1,4 @@
-PACKAGES="seminar_package"
+PACKAGES="import_monster"
 
 all: install black
 
