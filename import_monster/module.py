@@ -24,4 +24,4 @@ def methods_importer(method_name: str, modules: List[Union[str, ModuleType]]) ->
             continue
     return lis_t
 
-print(methods_importer("sum", [scipy, builtins]))
+print(methods_importer("sum", [builtins]))
