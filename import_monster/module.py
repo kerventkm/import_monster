@@ -3,10 +3,9 @@ import importlib
 from types import ModuleType
 from typing import List, Union, Callable
 
-
-
-
 import scipy
+
+
 def methods_importer(method_name: str, modules: List[Union[str, ModuleType]]) -> List[Callable]:
     lis_t = []
     for module in modules:
@@ -24,6 +23,3 @@ def methods_importer(method_name: str, modules: List[Union[str, ModuleType]]) ->
         except ImportError:
             continue
     return lis_t
-
-
-print(methods_importer("sum", [builtins, scipy]))
