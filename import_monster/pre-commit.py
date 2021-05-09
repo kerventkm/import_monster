@@ -1,1 +1,1 @@
-aman berdi
+aman
