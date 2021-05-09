@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 import builtins
 import importlib
+import math
 from types import ModuleType
 from typing import Callable, List, Union
 
 import scipy
+
+import numpy
 
 
 def methods_importer(
@@ -19,10 +22,10 @@ def methods_importer(
                 mod = importlib.import_module(module)
 
             else:
-                raise TypeError('Must be a list of strings or ModuleType')
+                raise TypeError("Must be a list of strings or ModuleType")
             met = getattr(mod, method_name, None)
             if met:
-                lis_t.append(mod)
+                lis_t.append(mod.__name__)
         except ImportError:
             continue
     return lis_t
