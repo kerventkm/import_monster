@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb17cedd-877f-4db4-93f4-37ea1f73eba8" name="Default Changelist" comment="a" />
+    <list default="true" id="eb17cedd-877f-4db4-93f4-37ea1f73eba8" name="Default Changelist" comment="a">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/master.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/master.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/pull_request.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/pull_request.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -317,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620602582125</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="a">
+      <created>1620602796286</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1620602796286</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
