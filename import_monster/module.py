@@ -26,6 +26,3 @@ def methods_importer(
         except ImportError:
             continue
     return lis_t
-
-
-print(methods_importer('sum', [builtins, scipy]))
