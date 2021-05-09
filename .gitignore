@@ -25,6 +25,9 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.idea
+.idea/
+.idea/*
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -109,10 +112,10 @@ celerybeat.pid
 .venv
 env/
 venv/
-venv/*
 ENV/
 env.bak/
 venv.bak/
+venv/*
 
 # Spyder project settings
 .spyderproject
