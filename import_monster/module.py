@@ -6,8 +6,7 @@ from typing import Callable, List, Union
 
 import scipy
 
-a = []
-b = []
+
 def methods_importer(
     method_name: str, modules: List[Union[str, ModuleType]]
 ) -> List[Callable]:
