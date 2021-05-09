@@ -28,7 +28,7 @@ class Test_method_importer:
         [
             (("add", [math, builtins, scipy, numpy]), ["scipy", "numpy"]),
             (("exponent", [builtins, scipy, numpy]), []),
-            # It will give error because correct is ['math', 'scipy']
+            # the test below will give error because correct is ['math', 'scipy']
             (("pi", [math, builtins, scipy]), ["math"]),
         ],
     )
@@ -37,4 +37,4 @@ class Test_method_importer:
 
     def test_fail(self):
         with pytest.raises(TypeError):
-            methods_importer(1, 100)
+            methods_importer(25, [math, builtins, scipy])
