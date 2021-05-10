@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 
 from setuptools import find_packages, setup
@@ -10,13 +11,13 @@ def read(filename: str) -> str:
 
 def parse_requirements() -> tuple:
     """Parse requirements.txt for install_requires"""
-    requirements = read('requirements.txt')
-    return tuple(requirements.split('\n'))
+    requirements = read("requirements.txt")
+    return tuple(requirements.split("\n"))
 
 
 setup(
-    name='project_test',
-    packages=find_packages(exclude=('tests', )),
-    python_requires='~=3.7',
+    name="project_test",
+    packages=find_packages(exclude=("tests",)),
+    python_requires="~=3.7",
     install_requires=parse_requirements(),
 )
