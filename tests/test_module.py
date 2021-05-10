@@ -28,8 +28,7 @@ class Test_method_importer:
         [
             (("add", [math, builtins, scipy, numpy]), ["scipy", "numpy"]),
             (("exponent", [builtins, scipy, numpy]), []),
-            # the test below will give error because correct is ['math', 'scipy']
-            (("pi", [math, builtins, scipy]), ["math"]),
+            (("pi", [math, builtins, scipy]), ["math", "scipy"]),
         ],
     )
     def test_multiple(self, test_case, expected_result):
