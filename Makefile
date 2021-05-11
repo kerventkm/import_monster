@@ -40,6 +40,6 @@ install-pre-commit: install-dev
 	@pre-commit install
 
 run-pre-commit:
-    @pre-commit run
+	@pre-commit run
 
 .PHONY: all install-dev uninstall clean test
